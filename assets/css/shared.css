@@ -232,7 +232,7 @@ body{letter-spacing:0}
 /* Journey rail becomes a route line instead of a row of chips. */
 .journey-rail{top:76px;background:rgba(255,250,240,.97);backdrop-filter:none;box-shadow:none}
 .journey-rail-inner{position:relative;gap:0;padding:.72rem 0}
-.journey-rail-inner:before{content:"";position:absolute;left:6px;right:6px;top:50%;border-top:1px solid rgba(27,48,66,.18);z-index:0}
+.journey-rail-inner:before{display:none}
 .journey-stop{position:relative;z-index:1;border-radius:0;border:0;background:var(--theme-surface);padding:.3rem .8rem;color:#6a7378;font-size:.7rem;font-weight:650}
 .journey-stop:before{width:7px;height:7px;box-shadow:0 0 0 4px var(--theme-surface);background:#9aa4aa}
 .journey-stop.active{background:var(--theme-surface);color:var(--theme-deep);border:0;font-weight:850}
