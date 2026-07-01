@@ -1,0 +1,11 @@
+/* Loaded last so the route/navigation stays restrained on every colour theme. */
+.journey-stop,.journey-stop.active{
+  background:transparent!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+.journey-stop.active{color:var(--theme-accent)!important}
+.journey-stop:before,.journey-stop.active:before{box-shadow:none!important}
+.global-actions .nav-cta{display:none!important}
+.card-actions{display:none!important}

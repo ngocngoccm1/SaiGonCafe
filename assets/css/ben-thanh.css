@@ -1,0 +1,29 @@
+:root{--theme-accent:#e28b22;--theme-deep:#b94b36;--theme-soft:#d9f0e7;--theme-surface:#fff7dc;--display-font:"Segoe UI Black","Arial Black","Trebuchet MS","Segoe UI",Arial,sans-serif}
+body{background:#fff7dc;background-image:radial-gradient(circle at 10% 10%,rgba(49,160,149,.08),transparent 22%),radial-gradient(circle at 90% 15%,rgba(231,139,34,.11),transparent 24%)}
+.district-hero:before{background:linear-gradient(180deg,rgba(98,30,20,.12),rgba(130,42,28,.64) 72%,#fff7dc)}
+.market-marquee{position:absolute;left:0;right:0;bottom:0;height:84px;background:repeating-linear-gradient(90deg,#c94935 0 42px,#fff1d4 42px 84px);clip-path:polygon(0 0,100% 0,98% 100%,94% 74%,90% 100%,86% 74%,82% 100%,78% 74%,74% 100%,70% 74%,66% 100%,62% 74%,58% 100%,54% 74%,50% 100%,46% 74%,42% 100%,38% 74%,34% 100%,30% 74%,26% 100%,22% 74%,18% 100%,14% 74%,10% 100%,6% 74%,2% 100%)}
+.market-street{padding:88px 0;background:linear-gradient(180deg,#fff7dc,#fffdf4)}
+.market-stalls{display:grid;gap:2rem}
+.market-stall{border-radius:34px;background:#fff;border:5px solid var(--stall-color);box-shadow:0 22px 55px rgba(119,61,28,.13);overflow:hidden;position:relative}
+.stall-awning{height:48px;background:repeating-linear-gradient(90deg,var(--stall-color) 0 54px,#fff7dc 54px 108px);position:relative}
+.stall-awning:after{content:"";position:absolute;inset:auto 0 -18px;height:25px;background:radial-gradient(circle at 13px -3px,var(--stall-color) 17px,transparent 18px) 0 0/54px 25px repeat-x}
+.stall-header{padding:2.2rem 1.5rem 1rem;display:flex;align-items:end;justify-content:space-between;gap:1rem}
+.stall-header h2{font:950 clamp(2rem,4vw,4rem)/.9 var(--display-font);text-transform:uppercase;color:var(--stall-color);margin:0}.stall-header p{max-width:500px;color:#6d6559;margin:0}
+.stall-counter{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;padding:1.3rem}
+.market-item{display:grid;grid-template-columns:190px 1fr;min-height:210px;background:#fffaf0;border:2px dashed color-mix(in srgb,var(--stall-color) 50%,#fff);border-radius:22px;overflow:hidden;position:relative}
+.market-item .dish-image{height:100%}.market-item-body{padding:1.1rem;display:flex;flex-direction:column}.market-item h3{font:900 1.25rem/1.08 var(--display-font);margin:.3rem 0;color:#3f3b35}.market-item p{color:#6d6559;font-size:.87rem}.chalk-price{display:inline-flex;align-self:flex-start;background:#27363a;color:white;padding:.28rem .55rem;border-radius:4px;font-family:"Trebuchet MS",sans-serif;font-weight:900;transform:rotate(-2deg);box-shadow:0 4px 0 rgba(0,0,0,.12)}
+.steam{position:absolute;left:80px;top:38px;width:40px;height:80px;pointer-events:none}.steam:before,.steam:after{content:"";position:absolute;width:15px;height:55px;border-radius:50%;border-left:3px solid rgba(255,255,255,.75);filter:blur(.5px);animation:steamRise 2.8s ease-in-out infinite}.steam:after{left:19px;animation-delay:.8s}@keyframes steamRise{0%{opacity:0;transform:translateY(15px) scale(.8)}50%{opacity:.75}100%{opacity:0;transform:translateY(-25px) scale(1.2)}}
+.sign-swing{transform-origin:50% 0;animation:signSwing 4s ease-in-out infinite}@keyframes signSwing{50%{transform:rotate(1.5deg)}}
+.market-note{background:#2b9b8f;color:#fff;border-radius:26px;padding:1.4rem;margin-top:2rem;display:flex;gap:1rem;align-items:center}.market-note strong{font-size:1.8rem}
+@media(max-width:900px){.stall-counter{grid-template-columns:1fr}.market-item{grid-template-columns:150px 1fr}}
+@media(max-width:560px){.market-item{grid-template-columns:1fr}.market-item .dish-image{height:220px}.stall-header{display:block}.stall-header p{margin-top:.7rem}.market-marquee{height:58px}}
+/* V5: market stalls stay playful, but lose generic card styling */
+.market-stalls{gap:3.2rem}
+.market-stall{border-radius:2px;border-width:3px;box-shadow:none}
+.stall-header{padding:2rem 1.35rem .7rem}
+.stall-counter{gap:0;padding:1.1rem 1.35rem 1.35rem}
+.market-item{border:0;border-top:1px dashed color-mix(in srgb,var(--stall-color) 55%,#fff);border-radius:0;background:transparent;min-height:190px;padding:1rem 0}
+.market-item:first-child{border-top:0}
+.market-item-body{padding:.4rem 1.1rem}
+.chalk-price{box-shadow:none}
+.market-note{border-radius:1px;background:#2b9b8f;padding:1.1rem 1.35rem}

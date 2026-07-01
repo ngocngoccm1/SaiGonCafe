@@ -1,0 +1,21 @@
+:root{--theme-accent:#ef3f46;--theme-deep:#2059b5;--theme-soft:#fff07c;--theme-surface:#f7fbff;--display-font:"Segoe UI Black","Arial Black","Segoe UI",Arial,sans-serif}
+body{background:#f7fbff;color:#213c59;background-image:linear-gradient(90deg,rgba(32,89,181,.045) 1px,transparent 1px),linear-gradient(rgba(32,89,181,.045) 1px,transparent 1px);background-size:30px 30px}
+.district-hero:before{background:linear-gradient(180deg,rgba(12,45,83,.05),rgba(17,67,124,.54) 70%,#f7fbff)}
+.pop-sticker{display:inline-flex;background:#fff07c;color:#17467d;border:3px solid #17467d;padding:.5rem .8rem;box-shadow:6px 6px 0 #ef3f46;transform:rotate(-2deg);font:950 .85rem var(--display-font);text-transform:uppercase}
+.fridge-section{padding:90px 0;background:linear-gradient(180deg,#f7fbff,#edf5ff)}
+.fridge-shell{border:14px solid #d8e0e8;border-radius:36px;background:#dce6ec;padding:1rem;box-shadow:inset 0 0 0 4px #aab8c4,0 30px 80px rgba(49,75,97,.15);position:relative;overflow:hidden}
+.fridge-shell:before{content:"";position:absolute;inset:0;background:linear-gradient(110deg,rgba(255,255,255,.6),transparent 30%);pointer-events:none}
+.fridge-zone{position:relative;background:rgba(255,255,255,.84);border-radius:22px;margin-bottom:1rem;border:1px solid rgba(32,89,181,.14);padding:1.1rem 1rem 1.6rem}.fridge-zone:last-child{margin-bottom:0}
+.fridge-zone-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:1rem}.fridge-zone h2{font:950 clamp(1.8rem,4vw,3.6rem)/.9 var(--display-font);text-transform:uppercase;color:#2059b5;margin:0}.shelf-label{background:#fff07c;color:#213c59;border:2px solid #213c59;padding:.3rem .65rem;font-size:.72rem;font-weight:950;transform:rotate(1deg);box-shadow:3px 3px 0 #ef3f46}
+.shelf{display:grid;grid-template-columns:repeat(4,1fr);gap:.85rem;border-bottom:12px solid #a6b3bd;padding-bottom:.8rem;position:relative}.shelf:after{content:"";position:absolute;left:0;right:0;bottom:-18px;height:8px;background:#eef3f7;box-shadow:0 4px 8px rgba(45,61,71,.2)}
+.shelf-product{background:#fff;border:2px solid rgba(32,89,181,.11);border-radius:18px;padding:.75rem;position:relative;min-height:300px;display:flex;flex-direction:column;transition:.25s}.shelf-product:hover{transform:translateY(-6px) rotate(.5deg);box-shadow:0 18px 30px rgba(30,71,106,.14)}.shelf-product .dish-image{height:155px;border-radius:14px;background:linear-gradient(180deg,#eef6ff,#fff)}.shelf-product h3{font:900 1rem/1.05 var(--display-font);margin:.65rem 0 .35rem}.shelf-product p{font-size:.78rem;color:#657786}.shelf-product .card-actions{margin-top:auto}.sticker-price{position:absolute;right:8px;top:8px;background:#ef3f46;color:#fff;border-radius:5px;padding:.24rem .45rem;font-weight:950;transform:rotate(3deg);box-shadow:2px 2px 0 #2059b5}
+.condensation{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(circle,rgba(255,255,255,.78) 0 2px,transparent 3px);background-size:52px 58px;opacity:.35;animation:condense 8s linear infinite}@keyframes condense{to{background-position:0 58px}}
+.fridge-door{position:absolute;inset:0 50% 0 0;background:linear-gradient(90deg,rgba(218,232,242,.8),rgba(255,255,255,.42));border-right:7px solid #9baeba;backdrop-filter:blur(7px);z-index:4;transform-origin:left;animation:doorOpen .9s .25s forwards}.fridge-door.right{left:50%;right:0;border-right:0;border-left:7px solid #9baeba;transform-origin:right}@keyframes doorOpen{to{transform:perspective(900px) rotateY(102deg);opacity:.15}}
+@media(max-width:960px){.shelf{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.shelf{display:flex;overflow:auto;scroll-snap-type:x mandatory}.shelf-product{min-width:76%;scroll-snap-align:start}.fridge-shell{border-width:8px;padding:.55rem}.fridge-zone-head{display:block}.shelf-label{display:inline-flex;margin-top:.7rem}}
+/* V5: retail shelf, not a dashboard grid */
+.fridge-shell{border-radius:3px;box-shadow:inset 0 0 0 3px #aab8c4,0 18px 44px rgba(49,75,97,.12)}
+.fridge-zone{border-radius:1px;background:rgba(255,255,255,.72)}
+.shelf-product{border-radius:0;border-width:0 0 1px;background:transparent;padding:.65rem;box-shadow:none}
+.shelf-product:hover{transform:translateY(-3px);box-shadow:none}
+.shelf-product .dish-image{border-radius:0}
+.shelf-product .entry-cue{color:#2059b5}

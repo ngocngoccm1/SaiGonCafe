@@ -1,0 +1,17 @@
+:root{--theme-accent:#e7a064;--theme-deep:#8b5c43;--theme-soft:#dff0df;--theme-surface:#fff1dd;--display-font:"Trebuchet MS","Segoe UI",Arial,sans-serif}
+body{background:linear-gradient(180deg,#fff1dd,#f4e4d0);color:#4f443d}
+.district-hero:before{background:linear-gradient(180deg,rgba(64,43,34,.08),rgba(76,51,38,.58) 72%,#fff1dd)}
+.bougainvillea{position:absolute;right:-30px;top:80px;width:320px;height:240px;pointer-events:none}.bougainvillea span{position:absolute;width:34px;height:34px;background:#e89bab;border-radius:70% 30% 65% 35%;animation:flowerSway 4s ease-in-out infinite;box-shadow:0 0 0 4px rgba(255,220,226,.22)}.bougainvillea span:nth-child(2){left:58px;top:40px;animation-delay:.8s}.bougainvillea span:nth-child(3){left:130px;top:12px;animation-delay:1.4s}.bougainvillea span:nth-child(4){left:175px;top:72px;animation-delay:.3s}.bougainvillea span:nth-child(5){left:238px;top:28px;animation-delay:1.1s}@keyframes flowerSway{50%{transform:rotate(8deg) translateY(-5px)}}
+.alley-journey{padding:90px 0;background:linear-gradient(180deg,#fff1dd,#f8e8da)}
+.alley-path{max-width:1000px;margin:auto;position:relative}.alley-path:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:110px;transform:translateX(-50%);background:repeating-linear-gradient(0deg,#d7c1a5 0 22px,#cfb497 22px 24px);clip-path:polygon(28% 0,72% 0,100% 100%,0 100%);opacity:.55}
+.alley-house{width:44%;margin-bottom:4rem;position:relative;background:#fffaf0;border-radius:26px;box-shadow:0 22px 48px rgba(106,80,61,.12);padding:1rem;border:1px solid rgba(139,92,67,.14)}.alley-house:nth-child(even){margin-left:auto}.house-sign{display:inline-block;background:#8b5c43;color:#fff;padding:.3rem .65rem;border-radius:5px;font-size:.74rem;font-weight:900;transform:rotate(-2deg)}
+.house-window{position:relative;height:330px;margin-top:.8rem;border:12px solid #a77a57;background:#7a553f;overflow:hidden;border-radius:12px}.house-window img{width:100%;height:100%;object-fit:cover}.shutter{position:absolute;top:0;bottom:0;width:50%;background:repeating-linear-gradient(0deg,#9b6845 0 12px,#875738 12px 16px);transition:.8s;z-index:2}.shutter.left{left:0;transform-origin:left}.shutter.right{right:0;transform-origin:right}.alley-house.is-visible .shutter.left{transform:perspective(600px) rotateY(-95deg)}.alley-house.is-visible .shutter.right{transform:perspective(600px) rotateY(95deg)}
+.alley-copy{padding:.8rem .25rem .25rem}.alley-copy h2{font:900 2rem/1 var(--display-font);margin:.5rem 0;color:#75503b}.alley-copy p{color:#76695f}.hand-note{font-family:"Segoe Print","Comic Sans MS",cursive;color:#bd6476;transform:rotate(-2deg);display:inline-block;margin:.2rem 0;font-weight:700}
+.sun-shadow{position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,rgba(255,236,165,.28),transparent 35%);mix-blend-mode:multiply;animation:sunMove 9s ease-in-out infinite alternate}@keyframes sunMove{to{transform:translateX(10%)}}
+.alley-quote{max-width:840px;margin:2rem auto 0;text-align:center;font:700 clamp(1.8rem,4vw,3.3rem)/1.15 var(--display-font);color:#a35d66}
+@media(max-width:780px){.alley-path:before{left:22px;width:56px}.alley-house,.alley-house:nth-child(even){width:calc(100% - 64px);margin-left:64px}.house-window{height:280px}}
+/* V5: the houses read like a real alley sequence, not product cards */
+.alley-house{background:transparent;border:0;border-radius:0;box-shadow:none;padding:0}
+.house-window{border-radius:1px}
+.alley-copy{padding:1rem 0;border-bottom:1px solid rgba(139,92,67,.22)}
+.alley-copy .entry-cue{color:#8b5c43}

@@ -1,0 +1,25 @@
+:root{--theme-accent:#c78a3e;--theme-deep:#6f1730;--theme-soft:#eadfbd;--theme-surface:#f5ead1;--display-font:Cambria,Georgia,"Times New Roman",serif}
+body{background:#1b1717;color:#f3e4c3}
+.global-header.scrolled,.journey-rail{background:rgba(24,19,20,.93);color:#f4e4c7;border-color:rgba(205,148,70,.17)}
+.journey-stop{color:#cdbfa8}.journey-stop.active{background:#5e1830;color:#fff}
+.district-hero:before{background:linear-gradient(180deg,rgba(24,10,14,.18),rgba(30,14,18,.88) 78%,#1b1717)}
+.wood-gate{position:fixed;inset:0;z-index:160;pointer-events:none;display:grid;grid-template-columns:1fr 1fr;transition:visibility .2s 1s}.wood-gate span{background:linear-gradient(90deg,#401913,#6d2a1d 40%,#3b1512);border:10px solid #25100d;box-shadow:inset 0 0 0 4px #9b6633;transition:transform 1.1s cubic-bezier(.63,.02,.2,1)}.wood-gate.open{visibility:hidden}.wood-gate.open span:first-child{transform:translateX(-105%)}.wood-gate.open span:last-child{transform:translateX(105%)}
+.lanterns{position:absolute;inset:95px 0 auto;display:flex;justify-content:space-around;pointer-events:none}.lantern{width:70px;height:90px;background:radial-gradient(circle at 50% 42%,#ff9b5e,#b61732 63%,#650c1f);border-radius:45% 45% 40% 40%;box-shadow:0 0 34px rgba(255,95,45,.42);animation:lanternGlow 3s ease-in-out infinite alternate}.lantern:nth-child(2){animation-delay:.7s}.lantern:nth-child(3){animation-delay:1.4s}@keyframes lanternGlow{to{filter:brightness(1.2);box-shadow:0 0 52px rgba(255,124,53,.65)}}
+.scroll-intro{background:linear-gradient(180deg,#1b1717,#25191b);padding:90px 0}
+.scroll-paper{background:#f2e3c1;color:#34231e;border-radius:12px;padding:clamp(1.5rem,5vw,4rem);box-shadow:0 28px 70px rgba(0,0,0,.28);position:relative;background-image:linear-gradient(rgba(130,87,44,.045) 1px,transparent 1px);background-size:100% 32px}
+.scroll-paper:before,.scroll-paper:after{content:"";position:absolute;left:-14px;right:-14px;height:25px;border-radius:50%;background:#c9aa76;box-shadow:0 4px 8px rgba(0,0,0,.18)}.scroll-paper:before{top:-12px}.scroll-paper:after{bottom:-12px}
+.signature-chapters{background:linear-gradient(180deg,#25191b,#141212)}
+.signature-chapter{min-height:72svh;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;padding:3.5rem 0;border-bottom:1px solid rgba(206,148,70,.14)}
+.signature-chapter:nth-child(even) .signature-image{order:2}
+.signature-image{position:relative;min-height:500px}.signature-image img{width:100%;height:500px;object-fit:cover;border-radius:38% 38% 22px 22px;box-shadow:0 35px 85px rgba(0,0,0,.38);transition:transform .3s;will-change:transform}.signature-image:after{content:"";position:absolute;inset:20px;border:1px solid rgba(233,193,122,.6);border-radius:36% 36% 18px 18px;pointer-events:none}
+.signature-copy .seal-stamp{display:inline-flex;width:90px;height:90px;border-radius:50%;border:4px double #b22339;color:#b22339;align-items:center;justify-content:center;text-align:center;font-weight:950;text-transform:uppercase;font-size:.68rem;transform:rotate(-9deg);background:#f2e3c1}
+.signature-copy h2{font:800 clamp(2.7rem,5vw,5.2rem)/.92 var(--display-font);margin:.8rem 0;color:#f3e4c3}.signature-copy p{color:#cbbda8}.signature-details{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin:1.2rem 0}.signature-detail{padding:1rem;border:1px solid rgba(206,148,70,.2);background:rgba(255,255,255,.025);border-radius:16px}.signature-detail b{display:block;color:#d4a755;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em}
+body .site-footer{background:#0f1110}.next-stop-card{color:#fff}
+@media(max-width:850px){.signature-chapter{grid-template-columns:1fr;gap:1.5rem}.signature-chapter:nth-child(even) .signature-image{order:0}.signature-image,.signature-image img{min-height:360px;height:420px}.signature-details{grid-template-columns:1fr}}
+/* V5: quieter, more cinematic chapters */
+.scroll-paper{border-radius:2px;box-shadow:0 18px 48px rgba(0,0,0,.22)}
+.signature-image img{border-radius:2px;box-shadow:0 24px 58px rgba(0,0,0,.3)}
+.signature-image:after{inset:12px;border-radius:0}
+.signature-details{gap:0;border-top:1px solid rgba(206,148,70,.2)}
+.signature-detail{border:0;border-bottom:1px solid rgba(206,148,70,.2);border-radius:0;background:transparent;padding:.9rem 0}
+.signature-copy .entry-cue{color:#d4a755}

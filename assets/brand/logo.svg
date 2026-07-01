@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="title desc">
+<title id="title">Sài Gòn Café</title><desc id="desc">Gold oval Sài Gòn Café logo recreated from the supplied menu.</desc>
+<defs>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#fff0aa"/><stop offset=".28" stop-color="#d9a43a"/>
+    <stop offset=".58" stop-color="#f1cb66"/><stop offset="1" stop-color="#a96b1f"/>
+  </linearGradient>
+</defs>
+<path d="M675 95c-54-61-155-88-268-76-144 15-263 83-293 169-16 47-2 90 39 119-23-27-30-58-17-91 31-78 145-139 280-152 102-10 195 11 259 56z" fill="url(#gold)"/>
+<path d="M126 280c49 63 157 101 281 96 137-6 257-64 302-145 25-45 23-91-7-126 17 32 15 66-5 101-45 76-158 128-287 133-115 5-216-26-284-82z" fill="url(#gold)"/>
+<text x="400" y="220" text-anchor="middle" fill="url(#gold)" font-size="112" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="700">Sài Gòn</text>
+<text x="400" y="275" text-anchor="middle" fill="url(#gold)" font-size="29" font-family="Georgia, serif" font-style="italic">The Art of Vietnamese Café &amp; Cuisine</text>
+</svg>
