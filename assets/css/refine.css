@@ -9,3 +9,35 @@
 .journey-stop:before,.journey-stop.active:before{box-shadow:none!important}
 .global-actions .nav-cta{display:none!important}
 .card-actions{display:none!important}
+
+/* Keep place photography clear. Text gets a shadow instead of hiding the image
+   under heavy page-wide gradients. */
+.district-hero{
+  background-repeat:no-repeat!important;
+  background-size:cover!important;
+}
+.district-hero:before{
+  background:linear-gradient(180deg,rgba(0,0,0,.04),rgba(0,0,0,.18) 68%,rgba(0,0,0,.08))!important;
+}
+.district-hero:after{
+  height:72px!important;
+  background:linear-gradient(180deg,transparent,rgba(0,0,0,.10))!important;
+}
+.district-hero-content{
+  text-shadow:0 2px 18px rgba(0,0,0,.55);
+}
+.district-hero p{
+  color:#fff!important;
+}
+.walk-forward{
+  animation:none!important;
+  background-repeat:no-repeat!important;
+  background-size:cover!important;
+  transform:none!important;
+}
+.next-stop-card{
+  background-image:linear-gradient(90deg,rgba(0,0,0,.24),rgba(0,0,0,.04)),var(--next-photo)!important;
+  background-repeat:no-repeat!important;
+  background-size:cover!important;
+  text-shadow:0 2px 16px rgba(0,0,0,.48);
+}
