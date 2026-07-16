@@ -1,5 +1,5 @@
 window.SAIGON_SITE = {
-  brand: "Sài Gòn Café",
+  brand: "Saigon Coffee Gozo",
   oldWebsite: "https://www.cafesaigongozo.com",
   address: "Victoria, Gozo, Malta",
   phone: "",
