@@ -4,6 +4,22 @@
   const page = document.body.dataset.page || 'home';
   const fallback = 'assets/brand/logo-from-menu.png';
 
+  // Language: English is the default; translated content stays off-screen until selected.
+  const languageButtons = $$('[data-language]');
+  const setLanguage = language => {
+    const selected = language === 'vi' ? 'vi' : 'en';
+    document.body.classList.toggle('language-vi', selected === 'vi');
+    document.documentElement.lang = selected;
+    languageButtons.forEach(button => button.classList.toggle('active', button.dataset.language === selected));
+    try { localStorage.setItem('saigonLanguage', selected); } catch { /* Storage is optional. */ }
+  };
+  if (languageButtons.length) {
+    let savedLanguage = 'en';
+    try { savedLanguage = localStorage.getItem('saigonLanguage') || 'en'; } catch { /* Storage is optional. */ }
+    setLanguage(savedLanguage);
+    languageButtons.forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.language)));
+  }
+
   // Header + navigation
   const header = $('.global-header');
   const toggle = $('.nav-toggle');

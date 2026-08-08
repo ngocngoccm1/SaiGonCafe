@@ -28,3 +28,4 @@ body{background:linear-gradient(180deg,#fbf7ed,#edf3ee 48%,#f6f1e8)}
 .dissolve-frame{border-radius:2px;box-shadow:0 14px 34px rgba(67,85,78,.12)}
 .story-principles{border-top:1px solid rgba(79,125,111,.22)}
 .principle{background:transparent;border:0;border-bottom:1px solid rgba(79,125,111,.22);border-radius:0;padding:1rem 0}
+.story-title{font-size:clamp(2.6rem,5vw,5rem);line-height:.98;margin:.7rem 0}

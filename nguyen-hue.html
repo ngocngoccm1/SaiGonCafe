@@ -1,189 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width,initial-scale=1" name="viewport" />
     <meta content="#fff8e8" name="theme-color" />
-    <meta content="Our Story: The Vietnam Journey, a taste of memories from Hanoi and Chợ Lớn to Saigon and Gozo." name="description" />
-    <title>Our Story · The Vietnam Journey · Saigon Coffee Gozo</title>
+    <meta content="The story of Sài Gòn Café: from Vietnam to Gozo, through family, tradition and flavours that nourish life." name="description" />
+    <title>Our Story · Sài Gòn Café</title>
     <link href="assets/brand/mark.svg" rel="icon" />
     <link href="assets/css/shared.css" rel="stylesheet" />
     <link href="assets/css/nguyen-hue.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/refine.css">
+    <link href="assets/css/refine.css" rel="stylesheet" />
 </head>
-
 <body data-page="nguyen-hue">
     <header class="global-header">
         <div class="container global-nav">
-            <a aria-label="Sài Gòn Café home" class="global-logo travel-link" href="index.html"><img alt="Sài Gòn Café"
-                    src="assets/brand/logo-from-menu.png" /></a>
-            <nav aria-label="Main navigation" class="global-links"><a class="travel-link" href="index.html">Saigon
-                    map</a><a href="#menu">Menu</a><a href="index.html#visit">Visit</a></nav>
-            <div class="global-actions"><button class="icon-btn cart-button" type="button">Order <span
-                        class="cart-count">0</span></button><button aria-label="Toggle menu"
-                    class="nav-toggle"><span></span><span></span></button></div>
+            <a aria-label="Sài Gòn Café home" class="global-logo travel-link" href="index.html"><img alt="Sài Gòn Café" src="assets/brand/logo-from-menu.png" /></a>
+            <nav aria-label="Main navigation" class="global-links"><a href="index.html">Home</a><a href="ben-thanh.html">Chợ Bến Thành</a><a href="menu.html">Menu</a><a href="index.html#visit">Visit</a></nav>
+            <div class="global-actions"><button class="language-toggle" data-language="en" type="button">EN</button><span class="language-divider">|</span><button class="language-toggle" data-language="vi" type="button">VI</button><button class="icon-btn cart-button" type="button">Order <span class="cart-count">0</span></button><button aria-label="Toggle menu" class="nav-toggle"><span></span><span></span></button></div>
         </div>
     </header>
-    <nav aria-label="Saigon journey" class="journey-rail">
-        <div class="journey-rail-inner"><a class="journey-stop active" href="nguyen-hue.html">🌳 Đường Nguyễn Huệ</a><a
-                class="journey-stop travel-link" href="ben-thanh.html">🛕 Chợ Bến Thành</a><a
-                class="journey-stop travel-link" href="cho-lon.html">🏮 Chợ Lớn</a><a class="journey-stop travel-link"
-                href="bui-vien.html">🌃 Phố Bùi Viện</a><a class="journey-stop travel-link" href="hem-saigon.html">🏡
-                Hẻm Sài Gòn</a><a class="journey-stop travel-link" href="cat-linh.html">🥤 Phố Cát Linh</a><a
-                class="journey-stop travel-link" href="tran-tuong-cong.html">☕ Đường Trần Tướng Công</a></div>
-    </nav>
     <main>
         <section class="district-hero" style="--place-photo:url('../images/places/nguyen-hue-night-walking-street.png')">
             <div class="walk-forward"></div>
-            <div class="container district-hero-content reveal"><span class="district-sign">Our Story</span>
-                <div class="district-kicker">A journey through the streets of Vietnam</div>
-                <h1>Our Story</h1>
-                <p>The Vietnam Journey: A Taste of Memories, from Hanoi and Chợ Lớn to Saigon and a new home in Gozo.</p>
-                <div class="hero-actions editorial-actions"><a class="btn action-primary" href="#menu">Explore this
-                        stop</a><a class="btn travel-link action-secondary" href="index.html">Back to the map</a></div>
-                <a class="photo-credit"
-                    href="https://commons.wikimedia.org/wiki/File:Nguyen_Hue_Boulevard_(52680486172).jpg" rel="noopener"
-                    target="_blank">B</a>
-            </div>
+            <div class="container district-hero-content reveal" data-lang="en"><span class="district-sign">Our Story</span><div class="district-kicker">The Vietnam Journey</div><h1>Flavours that nourish life.</h1><p>From Vietnam to Gozo, Sài Gòn Café is a story of family, tradition and a lifelong love for Vietnamese cuisine.</p><div class="hero-actions editorial-actions"><a class="btn action-primary" href="#origin">Discover the journey</a><a class="btn action-secondary" href="ben-thanh.html">Continue to Chợ Bến Thành</a></div></div>
+            <div class="container district-hero-content reveal" data-lang="vi"><span class="district-sign">Câu chuyện</span><div class="district-kicker">Hành trình Việt Nam</div><h1>Hương vị nuôi dưỡng sự sống.</h1><p>Từ Việt Nam đến Gozo, Sài Gòn Café là câu chuyện về gia đình, truyền thống và tình yêu dành cho ẩm thực Việt.</p><div class="hero-actions editorial-actions"><a class="btn action-primary" href="#origin">Khám phá hành trình</a><a class="btn action-secondary" href="ben-thanh.html">Tiếp tục đến Chợ Bến Thành</a></div></div>
         </section>
         <div class="avenue-line"></div>
-        <section class="page-section nguyen-intro" id="menu">
-            <div class="container">
-                <div class="section-heading reveal">
-                    <div>
-                        <div class="eyebrow">The Vietnam Journey</div>
-                        <h2>A taste of memories.</h2>
-                    </div>
-                    <p>Four chapters trace the memories, culture and flavours that shaped Sài Gòn Café.</p>
-                </div>
+        <section class="page-section nguyen-intro" id="origin">
+            <div class="container" data-lang="en">
+                <div class="section-heading reveal"><div><div class="eyebrow">The Vietnam Journey</div><h2>Every journey begins with a memory.</h2></div><p>Five chapters tell the story of a place where Vietnamese tradition finds a home in Gozo.</p></div>
                 <div class="road-timeline">
-                    <article class="timeline-stop reveal"><span class="timeline-year">01 · Origin</span>
-                        <h3>Where my journey began</h3>
-                        <p>Every dish carries a memory. My story began in Vietnam, from the old streets of Hanoi to the
-                            vibrant corners of Chợ Lớn, where family, childhood and the flavours of home shaped my love
-                            for Vietnamese food.</p>
-                    </article>
-                    <article class="timeline-stop reveal"><span class="timeline-year">02 · Journey</span>
-                        <h3>From Vietnam to Gozo</h3>
-                        <p>After almost 40 years in Germany, a new chapter began. At 58, I followed a dream to bring the
-                            flavours, stories and street food spirit of Vietnam to the island of Gozo, creating a place
-                            where cultures meet.</p>
-                    </article>
-                    <article class="timeline-stop reveal"><span class="timeline-year">03 · Philosophy</span>
-                        <h3>More than food, a memory to share</h3>
-                        <p>Vietnamese street food is about connection: simple ingredients, honest flavours and moments
-                            shared around a table. Every dish at Sài Gòn Café is inspired by the streets, markets and
-                            everyday life of Vietnam.</p>
-                    </article>
-                    <article class="timeline-stop reveal"><span class="timeline-year">04 · Today</span>
-                        <h3>A little corner of Saigon in Gozo</h3>
-                        <p>Sài Gòn Café is a small home for Vietnamese flavours, where street food, traditional drinks
-                            and slow coffee come together, inviting everyone to experience a taste of Vietnam in the
-                            heart of Gozo.</p>
-                    </article>
+                    <article class="timeline-stop reveal"><span class="timeline-year">01 · Origin</span><h3>Where every flavour began.</h3><p>Sài Gòn Café began with the memories of warm family meals. From the flavours of childhood, from the longing for home while living far away, and from a love for Vietnamese cuisine that has never faded. Those simple dishes nurtured the soul, preserved traditions and became the inspiration behind this journey.</p></article>
+                    <article class="timeline-stop reveal"><span class="timeline-year">02 · Journey</span><h3>A dream that travelled across continents.</h3><p>Nearly forty years in Germany brought new experiences, new friendships and a new life chapter. Yet the flavours of home always remained close. At the age of 58, a new beginning started: carrying memories, experience and a passion for Vietnamese cuisine to Gozo — where Vietnamese values found a new home beside the Mediterranean.</p></article>
+                    <article class="timeline-stop reveal" id="philosophy"><span class="timeline-year">03 · Philosophy</span><h3>Flavours that nourish life.</h3><p>Vietnamese cuisine begins with balance: natural ingredients, harmonious flavours and traditions preserved through generations. Every dish is created not only to be enjoyed, but also to nourish the body, comfort the soul and bring people together.</p></article>
+                    <article class="timeline-stop reveal" id="today"><span class="timeline-year">04 · Today</span><h3>A little corner of Vietnam in Gozo.</h3><p>Sài Gòn Café is where Vietnamese traditions meet the warmth of the island of Gozo — a place of familiar street food, traditional drinks and slow coffee moments. A place to pause, to connect and to experience the true spirit of Vietnamese hospitality.</p></article>
+                    <article class="timeline-stop reveal" id="gozo"><span class="timeline-year">05 · Gozo · Malta</span><h3>Where two cultures meet.</h3><p>Vietnam and Gozo may be thousands of kilometres apart. But around one table, distance disappears. Here, Vietnamese traditions meet Mediterranean warmth — creating a place where flavours are shared and new stories begin.</p></article>
                 </div>
             </div>
-        </section>
-        <section class="page-section nguyen-intro story-streets" aria-labelledby="street-journey-title">
-            <div class="container">
-                <div class="section-heading reveal">
-                    <div>
-                        <div class="eyebrow">Our Story · A Journey Through the Streets of Vietnam</div>
-                        <h2 id="street-journey-title">The Vietnam Journey</h2>
-                    </div>
-                    <p>Follow the streets that connect my beginnings, childhood memories and the spirit of Vietnamese
-                        street food with a new chapter in Gozo.</p>
-                </div>
-                <div class="road-timeline street-timeline">
-                    <article class="timeline-stop reveal"><span class="timeline-year">01 · Cat Linh Street · Hanoi</span>
-                        <h3>My Beginning</h3>
-                        <p>Every journey begins somewhere. Mine began on Cat Linh Street, Hanoi, a place where my first
-                            memories of Vietnam were created.</p>
-                    </article>
-                    <article class="timeline-stop reveal"><span class="timeline-year">02 · Tran Tuong Cong Street · Chợ Lớn</span>
-                        <h3>My Childhood Memories</h3>
-                        <p>Family meals, the Chinese quarter, street vendors and humble everyday dishes shaped the
-                            flavours and memories I still carry with me.</p>
-                    </article>
-                    <article class="timeline-stop reveal"><span class="timeline-year">03 · Saigon Alleys</span>
-                        <h3>The Soul of Street Food</h3>
-                        <p>Small alley kitchens, plastic stools, street vendors, the aroma of phin coffee and a hot bowl
-                            of phở in the morning: this is the soul of Sài Gòn Café.</p>
-                    </article>
-                    <article class="timeline-stop reveal"><span class="timeline-year">04 · Nguyen Hue Street · Saigon</span>
-                        <h3>The Spirit of Saigon</h3>
-                        <p>Open, energetic and always bringing people together, Nguyễn Huệ connects the memories of the
-                            past with the rhythm of the present.</p>
-                    </article>
-                    <article class="timeline-stop reveal"><span class="timeline-year">05 · Gozo · Malta</span>
-                        <h3>A New Chapter</h3>
-                        <p>After almost 40 years in Germany and a new beginning at 58, I chose Gozo as the place to share
-                            the flavours and memories of Vietnam.</p>
-                    </article>
+            <div class="container" data-lang="vi">
+                <div class="section-heading reveal"><div><div class="eyebrow">Hành trình Việt Nam</div><h2>Mỗi hành trình đều bắt đầu từ một ký ức.</h2></div><p>Năm chương kể về một nơi truyền thống Việt Nam tìm thấy ngôi nhà mới tại Gozo.</p></div>
+                <div class="road-timeline">
+                    <article class="timeline-stop reveal"><span class="timeline-year">01 · Khởi nguồn</span><h3>Nơi mọi hương vị bắt đầu.</h3><p>Sài Gòn Café bắt đầu từ ký ức của những bữa cơm gia đình ấm áp. Từ hương vị tuổi thơ, từ nỗi nhớ quê hương nơi đất khách và từ tình yêu dành cho ẩm thực Việt chưa bao giờ phai nhạt. Những món ăn giản dị ấy đã nuôi dưỡng tâm hồn, gìn giữ truyền thống và trở thành nguồn cảm hứng cho hành trình hôm nay.</p></article>
+                    <article class="timeline-stop reveal"><span class="timeline-year">02 · Hành trình</span><h3>Một giấc mơ vượt qua những vùng đất.</h3><p>Gần bốn mươi năm tại Đức đã mang đến những trải nghiệm mới, những mối quan hệ mới và một chương mới của cuộc đời. Nhưng hương vị quê hương vẫn luôn ở lại. Ở tuổi 58, một khởi đầu mới được mở ra: mang theo ký ức, kinh nghiệm và tình yêu dành cho ẩm thực Việt đến Gozo — nơi những giá trị Việt Nam tìm thấy một ngôi nhà mới bên bờ Địa Trung Hải.</p></article>
+                    <article class="timeline-stop reveal"><span class="timeline-year">03 · Triết lý</span><h3>Hương vị nuôi dưỡng sự sống.</h3><p>Ẩm thực Việt bắt đầu từ sự cân bằng: nguyên liệu tự nhiên, hương vị hài hòa và những giá trị truyền thống được gìn giữ qua nhiều thế hệ. Mỗi món ăn không chỉ để thưởng thức, mà còn để nuôi dưỡng cơ thể, làm ấm tâm hồn và kết nối con người.</p></article>
+                    <article class="timeline-stop reveal"><span class="timeline-year">04 · Hôm nay</span><h3>Một góc nhỏ Việt Nam tại Gozo.</h3><p>Sài Gòn Café là nơi truyền thống Việt Nam gặp gỡ sự ấm áp của đảo Gozo — nơi có những món ăn đường phố quen thuộc, những thức uống truyền thống và những khoảnh khắc cà phê chậm rãi. Một nơi để dừng lại, để kết nối và để cảm nhận tinh thần hiếu khách Việt Nam.</p></article>
+                    <article class="timeline-stop reveal"><span class="timeline-year">05 · Gozo · Malta</span><h3>Nơi hai nền văn hóa gặp nhau.</h3><p>Việt Nam và Gozo có thể cách nhau hàng ngàn cây số. Nhưng quanh một chiếc bàn, mọi khoảng cách đều trở nên gần hơn. Nơi đây, truyền thống Việt Nam hòa cùng sự ấm áp của Địa Trung Hải — tạo nên một nơi để hương vị được sẻ chia và những câu chuyện mới được bắt đầu.</p></article>
                 </div>
             </div>
         </section>
         <section class="page-section dissolve-story">
-            <div class="container dissolve-grid">
-                <div class="dissolve-frame reveal"><img alt="Nguyễn Huệ in monochrome" class="dissolve-old"
-                        src="assets/images/places/nguyen-hue-night-walking-street.png" /><img alt="Nguyễn Huệ in colour"
-                        class="dissolve-new" src="assets/images/places/nguyen-hue-night-walking-street.png" /></div>
-                <div class="reveal">
-                    <div class="eyebrow">Past becomes present</div>
-                    <h2 class="display" style="font-size:clamp(2.6rem,5vw,5rem);line-height:.98;margin:.7rem 0">Old
-                        memories, a new home in Gozo.</h2>
-                    <p class="muted">From the streets of Vietnam to the island of Gozo, old memories are brought back
-                        to life through flavours, colours and stories. What began as childhood moments and family
-                        traditions now becomes a place where people gather, share and experience Vietnamese culture.</p>
-                    <div class="story-principles">
-                        <div class="principle"><b>Freshness</b>Ingredients full of colour, texture and life. Inspired by
-                            Vietnamese markets and street kitchens, every dish celebrates the natural flavours of fresh
-                            ingredients.</div>
-                        <div class="principle"><b>Warmth</b>The feeling of a familiar table. Like a meal shared at home,
-                            our food is created to bring comfort, connection and a sense of belonging.</div>
-                        <div class="principle"><b>Connection</b>Vietnamese flavours meeting the heart of Gozo. A bridge
-                            between two cultures, bringing a taste of Saigon to locals, travellers and everyone who
-                            walks through our doors.</div>
-                    </div>
-                </div>
+            <div class="container dissolve-grid" data-lang="en">
+                <div class="dissolve-frame reveal"><img alt="Nguyễn Huệ at night" src="assets/images/places/nguyen-hue-night-walking-street.png" /></div>
+                <div class="reveal"><div class="eyebrow">Past becomes present</div><h2 class="display story-title">Memories live through flavour.</h2><p class="muted">Some memories return through a familiar aroma. Some traditions continue through cherished recipes. Some connections begin with a shared meal. From Vietnam to Gozo, the values of the past continue to live through new experiences.</p><div class="story-principles"><div class="principle"><b>Freshness</b>From nature to table: fragrant herbs, colourful vegetables and carefully selected produce.</div><div class="principle"><b>Warmth</b>The taste of home. Every guest is welcomed like family.</div><div class="principle"><b>Connection</b>One table. Many stories. Food is a language understood by everyone.</div></div></div>
+            </div>
+            <div class="container dissolve-grid" data-lang="vi">
+                <div class="dissolve-frame reveal"><img alt="Nguyễn Huệ về đêm" src="assets/images/places/nguyen-hue-night-walking-street.png" /></div>
+                <div class="reveal"><div class="eyebrow">Quá khứ trở thành hiện tại</div><h2 class="display story-title">Ký ức sống trong từng hương vị.</h2><p class="muted">Có những ký ức trở về qua một mùi hương quen thuộc. Có những truyền thống tiếp tục tồn tại qua những công thức được gìn giữ. Có những kết nối bắt đầu từ một bữa ăn chung. Từ Việt Nam đến Gozo, những giá trị của quá khứ tiếp tục sống trong những trải nghiệm hôm nay.</p><div class="story-principles"><div class="principle"><b>Tươi mới</b>Từ thiên nhiên đến bàn ăn: rau thơm đầy hương vị, rau củ đầy màu sắc và nguyên liệu được lựa chọn cẩn thận.</div><div class="principle"><b>Ấm áp</b>Hương vị của một mái nhà. Mỗi vị khách đều được chào đón như người thân.</div><div class="principle"><b>Kết nối</b>Một chiếc bàn. Nhiều câu chuyện. Ẩm thực là ngôn ngữ mà mọi người đều có thể cảm nhận.</div></div></div>
             </div>
         </section>
-        <section class="next-stop">
-            <div class="container"><a class="next-stop-card travel-link" href="ben-thanh.html"
-                    style="--next-photo:url('../images/places/ben-thanh-market.jpg')">
-                    <div><span>Continue the journey</span>
-                        <h2>🛕 Chợ Bến Thành</h2>
-                        <p>Next stop: Street Food</p><span class="next-arrow">Continue →</span>
-                    </div>
-                </a></div>
-        </section>
+        <section class="next-stop"><div class="container"><a class="next-stop-card travel-link" href="ben-thanh.html" style="--next-photo:url('../images/places/ben-thanh-market.jpg')"><div data-lang="en"><span>Continue the journey</span><h2>🛕 Chợ Bến Thành</h2><p>Discover the rhythm of Saigon streets.</p><span class="next-arrow">Continue →</span></div><div data-lang="vi"><span>Tiếp tục hành trình</span><h2>🛕 Chợ Bến Thành</h2><p>Khám phá nhịp sống đường phố Sài Gòn.</p><span class="next-arrow">Tiếp tục →</span></div></a></div></section>
     </main>
-    <footer class="site-footer" id="visit">
-        <div class="container">
-            <div class="footer-grid">
-                <div><img alt="Sài Gòn Café" class="footer-logo" src="assets/brand/logo-from-menu.png" />
-                    <p class="footer-copy">A journey through Vietnam told through food, drinks, streets and memories,
-                        brought to a new home in Victoria, Gozo.</p>
-                </div>
-                <div>
-                    <div class="footer-title">Journey</div>
-                    <div class="footer-links"><a class="travel-link" href="index.html">Saigon Map</a><a
-                            href="menu.html">All stops</a><a href="index.html#visit">Visit the café</a></div>
-                </div>
-                <div>
-                    <div class="footer-title">Find us</div>
-                    <div class="footer-links"><span data-config="address">Victoria, Gozo, Malta</span><a
-                            data-href="googleMaps" href="#">Google Maps</a><a data-href="oldWebsite" href="#">Original
-                            website</a></div>
-                </div>
-            </div>
-            <div class="copyright"><span>© <span data-year=""></span> Sài Gòn Café</span><span>Every Street Has a
-                    Story.</span></div>
-        </div>
-    </footer>
-    <script src="assets/js/site-config.js"></script>
-    <script src="assets/js/app.js"></script>
+    <footer class="site-footer"><div class="container"><div class="footer-grid"><div><img alt="Sài Gòn Café" class="footer-logo" src="assets/brand/logo-from-menu.png" /><p class="footer-copy">Come and experience Vietnam in Gozo.</p></div><div><div class="footer-title">Journey</div><div class="footer-links"><a href="index.html">Home</a><a href="ben-thanh.html">Chợ Bến Thành</a><a href="menu.html">Menu</a></div></div><div><div class="footer-title">Visit</div><div class="footer-links"><span data-config="address">Victoria, Gozo, Malta</span><a data-href="googleMaps" href="#">Google Maps</a></div></div></div><div class="copyright"><span>© <span data-year=""></span> Sài Gòn Café</span><span>Flavours that nourish life.</span></div></div></footer>
+    <script src="assets/js/site-config.js"></script><script src="assets/js/app.js"></script>
 </body>
-
 </html>

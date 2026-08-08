@@ -38,6 +38,11 @@ button{color:inherit}
 .btn-dark{background:var(--theme-deep);color:#fff;border-color:transparent}
 .btn-small{min-height:38px;padding:.56rem .84rem;font-size:.82rem}
 .hidden{display:none!important}
+[data-lang="vi"]{display:none!important}
+body.language-vi [data-lang="en"]{display:none!important}
+body.language-vi [data-lang="vi"]{display:revert!important}
+.language-toggle{appearance:none;border:0;background:transparent;color:inherit;padding:.2rem 0;font-size:.72rem;font-weight:750;cursor:pointer;opacity:.58}
+.language-toggle.active{opacity:1;border-bottom:1px solid currentColor}.language-divider{font-size:.72rem;opacity:.42}
 
 /* Shared header */
 .global-header{position:fixed;inset:0 0 auto;z-index:80;transition:.3s;background:linear-gradient(180deg,rgba(12,29,45,.48),transparent);color:#fff}

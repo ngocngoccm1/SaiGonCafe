@@ -28,6 +28,19 @@
 @media(max-width:640px){.home-hero{padding-top:112px}.home-copy h1{font-size:3.65rem}.home-map{min-height:540px;border-radius:30px}.map-pin{width:46px;height:46px}.map-label{font-size:.6rem}.rhythm-track{display:flex;overflow:auto;scroll-snap-type:x mandatory}.rhythm-card{min-width:72%;min-height:260px!important;scroll-snap-align:start}}
 .global-header{color:#173c56;background:linear-gradient(180deg,rgba(255,250,240,.82),transparent)}
 
+/* Brand-story hero: the opening image is a shared table, never a menu list. */
+.culture-hero .home-copy p + p{margin-top:1rem}
+.home-portrait{display:grid;grid-template-rows:1fr auto;min-height:650px;background:#172d3c}
+.home-portrait img{width:100%;height:100%;min-height:590px;object-fit:cover;object-position:center}
+.home-portrait figcaption{padding:.8rem 1rem;color:#fff7e5;font:700 .72rem/1.3 var(--body-font);letter-spacing:.12em;text-transform:uppercase}
+.menu-overview-hero{min-height:82svh}
+.menu-overview{background:#fffdf7}
+.menu-chapter-list{border-top:1px solid rgba(25,48,66,.18)}
+.menu-chapter{display:grid;grid-template-columns:132px 1fr auto;gap:1.25rem;align-items:center;padding:1rem 0;border-bottom:1px solid rgba(25,48,66,.18)}
+.menu-chapter img{width:132px;height:102px;object-fit:cover}.menu-chapter span{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;font-weight:750;color:var(--theme-deep)}
+.menu-chapter h2{font:800 clamp(1.6rem,3vw,2.7rem)/1 var(--display-font);margin:.4rem 0}.menu-chapter p{margin:0;color:var(--ink-soft)}.menu-chapter b{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid currentColor;padding-bottom:.25rem;white-space:nowrap}
+.menu-chapter:hover{background:rgba(217,164,65,.06)}
+
 /* V5 editorial home */
 .home-hero{background:linear-gradient(135deg,#fff9e9 0,#eef7e9 58%,#e8f1f6 100%)}
 .home-grid{grid-template-columns:.92fr 1.08fr;gap:5rem}
@@ -51,6 +64,8 @@
  .home-grid{grid-template-columns:1fr;gap:2.4rem}
  .home-map{border-radius:0}
  .home-map{min-height:650px;overflow:hidden}
+ .home-portrait{min-height:440px}.home-portrait img{min-height:390px}
+ .menu-chapter{grid-template-columns:84px 1fr;gap:.8rem}.menu-chapter img{width:84px;height:84px}.menu-chapter b{grid-column:2;justify-self:start}.menu-chapter h2{font-size:1.65rem}
  .home-map svg{inset:7% 8%;width:84%;height:86%}
  .map-stop{max-width:42%;gap:.25rem}
  .map-label{font-size:.72rem;line-height:1.15;max-width:136px;white-space:normal;text-align:center;text-wrap:balance}

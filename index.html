@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta content="width=device-width,initial-scale=1" name="viewport" />
     <meta content="#fff8e8" name="theme-color" />
-    <meta content="Saigon Coffee Gozo: a journey through the streets, flavours and memories of Vietnam." name="description" />
-    <title>Saigon Coffee Gozo · The Vietnam Journey</title>
+    <meta content="Sài Gòn Café in Gozo — a Vietnam journey told through family, tradition and flavours that nourish life." name="description" />
+    <title>Sài Gòn Café · The Vietnam Journey</title>
     <link href="assets/brand/mark.svg" rel="icon" />
     <link href="assets/css/shared.css" rel="stylesheet" />
     <link href="assets/css/home.css" rel="stylesheet" />
@@ -17,64 +17,85 @@
         <div class="intro-inner">
             <img alt="" class="intro-logo" src="assets/brand/logo-from-menu.png" />
             <div class="intro-copy">
-                <h1>Welcome to Saigon Coffee Gozo</h1>
-                <p>A Little Corner of Saigon in the Heart of Gozo</p>
+                <h1>Sài Gòn Café</h1>
+                <p>Flavours that nourish life.</p>
             </div>
         </div>
         <button class="skip-intro">Skip intro</button>
     </div>
     <header class="global-header">
         <div class="container global-nav">
-            <a aria-label="Saigon Coffee Gozo home" class="global-logo travel-link" href="index.html"><img alt="Saigon Coffee Gozo" src="assets/brand/logo-from-menu.png" /></a>
-            <nav aria-label="Main navigation" class="global-links"><a class="travel-link" href="index.html">Saigon map</a><a href="#journey-map">Menu</a><a href="index.html#visit">Visit</a></nav>
-            <div class="global-actions"><button class="icon-btn cart-button" type="button">Order <span class="cart-count">0</span></button><button aria-label="Toggle menu" class="nav-toggle"><span></span><span></span></button></div>
+            <a aria-label="Sài Gòn Café home" class="global-logo travel-link" href="index.html"><img alt="Sài Gòn Café" src="assets/brand/logo-from-menu.png" /></a>
+            <nav aria-label="Main navigation" class="global-links">
+                <a href="nguyen-hue.html">Our Story</a><a href="ben-thanh.html">Chợ Bến Thành</a><a href="menu.html">Menu</a><a href="#visit">Visit</a>
+            </nav>
+            <div class="global-actions"><button class="language-toggle" data-language="en" type="button">EN</button><span class="language-divider">|</span><button class="language-toggle" data-language="vi" type="button">VI</button><button class="icon-btn cart-button" type="button">Order <span class="cart-count">0</span></button><button aria-label="Toggle menu" class="nav-toggle"><span></span><span></span></button></div>
         </div>
     </header>
     <main>
-        <section class="home-hero">
+        <section class="home-hero culture-hero">
             <div class="container home-grid">
-                <div class="home-copy reveal">
-                    <div class="eyebrow">Our Story · A Journey Through the Streets of Vietnam</div>
-                    <h1>The Vietnam Journey <em>· A Taste of Memories.</em></h1>
-                    <p>From Hanoi and Chợ Lớn to the streets of Saigon and a new home in Gozo, follow the memories, culture and flavours behind Sài Gòn Café.</p>
-                    <div class="hero-actions editorial-actions"><a class="btn action-primary travel-link" href="nguyen-hue.html">Read our story</a><a class="btn action-secondary" href="#journey-map">Explore the map</a></div>
+                <div class="home-copy reveal" data-lang="en">
+                    <div class="eyebrow">The Vietnam Journey</div>
+                    <h1>The Vietnam Journey <em>Flavours that nourish life.</em></h1>
+                    <p>Every journey begins with a memory. From Vietnam to Gozo, Sài Gòn Café is a story of family, tradition and a lifelong love for Vietnamese cuisine.</p>
+                    <p>A journey carrying familiar flavours, cherished values and the simple joy of sharing a meal together.</p>
+                    <div class="hero-actions editorial-actions"><a class="btn action-primary" href="nguyen-hue.html">Discover Our Story</a><a class="btn action-secondary" href="ben-thanh.html">Discover the Market</a></div>
                 </div>
-                <div class="home-map reveal" id="journey-map">
+                <div class="home-copy reveal" data-lang="vi">
+                    <div class="eyebrow">Hành trình Việt Nam</div>
+                    <h1>Hành trình Việt Nam <em>Hương vị nuôi dưỡng sự sống.</em></h1>
+                    <p>Mỗi hành trình đều bắt đầu từ một ký ức. Từ Việt Nam đến Gozo, Sài Gòn Café là câu chuyện về gia đình, truyền thống và tình yêu dành cho ẩm thực Việt.</p>
+                    <p>Một hành trình mang theo những hương vị thân quen, những giá trị được gìn giữ và niềm vui giản dị khi cùng nhau thưởng thức một bữa ăn.</p>
+                    <div class="hero-actions editorial-actions"><a class="btn action-primary" href="nguyen-hue.html">Khám phá câu chuyện</a><a class="btn action-secondary" href="ben-thanh.html">Khám phá khu chợ</a></div>
+                </div>
+                <div class="home-map reveal" aria-label="The Sài Gòn Café journey">
                     <svg aria-hidden="true" viewBox="0 0 700 700"><path class="map-line" d="M155 105 C310 28 500 60 555 145 C620 245 570 360 440 400 C285 447 130 405 138 545 C144 650 410 677 520 600"></path></svg>
-                    <a class="map-stop travel-link" href="nguyen-hue.html"><span class="map-pin"><i>🌳</i></span><span class="map-label">Đường Nguyễn Huệ<span class="map-note">Our Story</span></span></a>
-                    <a class="map-stop travel-link" href="ben-thanh.html"><span class="map-pin"><i>🛕</i></span><span class="map-label">Chợ Bến Thành<span class="map-note">Street Food</span></span></a>
-                    <a class="map-stop travel-link" href="cho-lon.html"><span class="map-pin"><i>🏮</i></span><span class="map-label">Chợ Lớn<span class="map-note">Signature Dishes</span></span></a>
-                    <a class="map-stop travel-link" href="bui-vien.html"><span class="map-pin"><i>🌃</i></span><span class="map-label">Phố Bùi Viện<span class="map-note">Homemade Drinks</span></span></a>
-                    <a class="map-stop travel-link" href="hem-saigon.html"><span class="map-pin"><i>🏡</i></span><span class="map-label">Hẻm Sài Gòn<span class="map-note">Desserts</span></span></a>
-                    <a class="map-stop travel-link" href="cat-linh.html"><span class="map-pin"><i>🥤</i></span><span class="map-label">Phố Cát Linh<span class="map-note">Soft Drinks</span></span></a>
-                    <a class="map-stop travel-link" href="tran-tuong-cong.html"><span class="map-pin"><i>☕</i></span><span class="map-label">Đường Trần Tướng Công<span class="map-note">Vietnamese Coffee</span></span></a>
+                    <a class="map-stop" href="nguyen-hue.html"><span class="map-pin"><i>01</i></span><span class="map-label">Our Story<span class="map-note">Family · tradition · Gozo</span></span></a>
+                    <a class="map-stop" href="ben-thanh.html"><span class="map-pin"><i>02</i></span><span class="map-label">Chợ Bến Thành<span class="map-note">Street food market</span></span></a>
+                    <a class="map-stop" href="cho-lon.html"><span class="map-pin"><i>03</i></span><span class="map-label">Family Flavours<span class="map-note">Signature dishes</span></span></a>
+                    <a class="map-stop" href="bui-vien.html"><span class="map-pin"><i>04</i></span><span class="map-label">Traditional Drinks<span class="map-note">A brighter pause</span></span></a>
+                    <a class="map-stop" href="tran-tuong-cong.html"><span class="map-pin"><i>05</i></span><span class="map-label">Vietnamese Coffee<span class="map-note">A slow moment</span></span></a>
                 </div>
             </div>
         </section>
         <section class="page-section home-rhythm">
             <div class="container">
-                <div class="section-heading reveal">
-                    <div><div class="eyebrow">The Vietnam Journey</div><h2>Streets, markets and memories.</h2></div>
-                    <p>Each stop reveals another part of Vietnam through personal stories, street food, family flavours, drinks and slow coffee.</p>
+                <div class="section-heading reveal" data-lang="en">
+                    <div><div class="eyebrow">Our values</div><h2>Past becomes present.</h2></div>
+                    <p>At Sài Gòn Café, Vietnamese cuisine is a way to nourish, welcome and bring people together.</p>
                 </div>
-                <div class="rhythm-track">
-                    <a class="rhythm-card travel-link reveal" href="nguyen-hue.html" style="--bg:#5a9479"><span>🌳</span><h3>Đường Nguyễn Huệ</h3><p>Our Story</p></a>
-                    <a class="rhythm-card travel-link reveal" href="ben-thanh.html" style="--bg:#d85d43"><span>🛕</span><h3>Chợ Bến Thành</h3><p>Street Food</p></a>
-                    <a class="rhythm-card travel-link reveal" href="cho-lon.html" style="--bg:#7d3044"><span>🏮</span><h3>Chợ Lớn</h3><p>Signature Dishes</p></a>
-                    <a class="rhythm-card travel-link reveal" href="bui-vien.html" style="--bg:#643da1"><span>🌃</span><h3>Phố Bùi Viện</h3><p>Homemade Drinks</p></a>
-                    <a class="rhythm-card travel-link reveal" href="hem-saigon.html" style="--bg:#d58a95"><span>🏡</span><h3>Hẻm Sài Gòn</h3><p>Desserts</p></a>
-                    <a class="rhythm-card travel-link reveal" href="cat-linh.html" style="--bg:#2366aa"><span>🥤</span><h3>Phố Cát Linh</h3><p>Soft Drinks</p></a>
-                    <a class="rhythm-card travel-link reveal" href="tran-tuong-cong.html" style="--bg:#795139"><span>☕</span><h3>Đường Trần Tướng Công</h3><p>Vietnamese Coffee</p></a>
+                <div class="section-heading reveal" data-lang="vi">
+                    <div><div class="eyebrow">Những giá trị</div><h2>Quá khứ trở thành hiện tại.</h2></div>
+                    <p>Tại Sài Gòn Café, ẩm thực Việt là cách để nuôi dưỡng, chào đón và kết nối mọi người.</p>
+                </div>
+                <div class="rhythm-track" data-lang="en">
+                    <a class="rhythm-card reveal" href="nguyen-hue.html" style="--bg:#5a9479"><span>01</span><h3>Origin</h3><p>Where every flavour began.</p></a>
+                    <a class="rhythm-card reveal" href="nguyen-hue.html#philosophy" style="--bg:#d85d43"><span>02</span><h3>Freshness</h3><p>From nature to table.</p></a>
+                    <a class="rhythm-card reveal" href="nguyen-hue.html#today" style="--bg:#7d3044"><span>03</span><h3>Warmth</h3><p>The taste of home.</p></a>
+                    <a class="rhythm-card reveal" href="nguyen-hue.html#gozo" style="--bg:#795139"><span>04</span><h3>Connection</h3><p>One table. Many stories.</p></a>
+                </div>
+                <div class="rhythm-track" data-lang="vi">
+                    <a class="rhythm-card reveal" href="nguyen-hue.html" style="--bg:#5a9479"><span>01</span><h3>Khởi nguồn</h3><p>Nơi mọi hương vị bắt đầu.</p></a>
+                    <a class="rhythm-card reveal" href="nguyen-hue.html#philosophy" style="--bg:#d85d43"><span>02</span><h3>Tươi mới</h3><p>Từ thiên nhiên đến bàn ăn.</p></a>
+                    <a class="rhythm-card reveal" href="nguyen-hue.html#today" style="--bg:#7d3044"><span>03</span><h3>Ấm áp</h3><p>Hương vị của một mái nhà.</p></a>
+                    <a class="rhythm-card reveal" href="nguyen-hue.html#gozo" style="--bg:#795139"><span>04</span><h3>Kết nối</h3><p>Một chiếc bàn. Nhiều câu chuyện.</p></a>
                 </div>
             </div>
         </section>
         <section class="page-section home-cta">
             <div class="container">
-                <div class="home-cta-card reveal">
-                    <div class="eyebrow" style="color:#ffe5a4">A Little Corner of Saigon in Gozo</div>
-                    <h2>More than food, a memory to share.</h2>
-                    <p>Step into the journey, discover the streets and experience a taste of Vietnam in the heart of Gozo.</p>
-                    <div class="hero-actions editorial-actions"><a class="btn travel-link action-primary" href="nguyen-hue.html">Begin the story</a><a class="btn action-secondary" href="#journey-map">Explore the stops</a></div>
+                <div class="home-cta-card reveal" data-lang="en">
+                    <div class="eyebrow" style="color:#ffe5a4">Continue the journey</div>
+                    <h2>Chợ Bến Thành</h2>
+                    <p>Discover the rhythm of Saigon streets: busy, colourful and full of life.</p>
+                    <div class="hero-actions editorial-actions"><a class="btn travel-link action-primary" href="ben-thanh.html">Enter the Market</a><a class="btn action-secondary" href="menu.html">Explore the Menu</a></div>
+                </div>
+                <div class="home-cta-card reveal" data-lang="vi">
+                    <div class="eyebrow" style="color:#ffe5a4">Tiếp tục hành trình</div>
+                    <h2>Chợ Bến Thành</h2>
+                    <p>Khám phá nhịp sống đường phố Sài Gòn: nhộn nhịp, rực rỡ và đầy sức sống.</p>
+                    <div class="hero-actions editorial-actions"><a class="btn travel-link action-primary" href="ben-thanh.html">Khám phá khu chợ</a><a class="btn action-secondary" href="menu.html">Xem thực đơn</a></div>
                 </div>
             </div>
         </section>
@@ -82,11 +103,11 @@
     <footer class="site-footer" id="visit">
         <div class="container">
             <div class="footer-grid">
-                <div><img alt="Sài Gòn Café" class="footer-logo" src="assets/brand/logo-from-menu.png" /><p class="footer-copy">A journey through Vietnam told through food, drinks, streets and memories, brought to a new home in Victoria, Gozo.</p></div>
-                <div><div class="footer-title">Journey</div><div class="footer-links"><a class="travel-link" href="index.html">Saigon Map</a><a href="menu.html">All stops</a><a href="index.html#visit">Visit the café</a></div></div>
-                <div><div class="footer-title">Find us</div><div class="footer-links"><span data-config="address">Victoria, Gozo, Malta</span><a data-href="googleMaps" href="#">Google Maps</a><a data-href="oldWebsite" href="#">Original website</a></div></div>
+                <div><img alt="Sài Gòn Café" class="footer-logo" src="assets/brand/logo-from-menu.png" /><p class="footer-copy" data-lang="en">Come and experience Vietnam in Gozo.</p><p class="footer-copy" data-lang="vi">Hãy đến và cảm nhận Việt Nam tại Gozo.</p></div>
+                <div><div class="footer-title">Journey</div><div class="footer-links"><a href="nguyen-hue.html">Our Story</a><a href="ben-thanh.html">Chợ Bến Thành</a><a href="menu.html">Menu</a></div></div>
+                <div><div class="footer-title">Visit</div><div class="footer-links"><span data-config="address">Victoria, Gozo, Malta</span><a data-href="googleMaps" href="#">Google Maps</a><span data-config="hours" data-hide-empty></span><a data-href="instagram" data-hide-empty>Instagram</a></div></div>
             </div>
-            <div class="copyright"><span>© <span data-year=""></span> Saigon Coffee Gozo</span><span>Every Street Has a Story.</span></div>
+            <div class="copyright"><span>© <span data-year=""></span> Sài Gòn Café</span><span>Flavours that nourish life.</span></div>
         </div>
     </footer>
     <script src="assets/js/site-config.js"></script>
