@@ -9,6 +9,6 @@ window.SAIGON_SITE = {
   instagram: "",
   booking: "",
   googleMaps: "https://www.google.com/maps/search/?api=1&query=Sai+Gon+Cafe+Victoria+Gozo",
-  hours: [],
+  hours: "10 AM–5 PM",
   note: "Contact details are centralised here. Confirm the final details before launch."
 };
